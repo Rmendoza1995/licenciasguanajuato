@@ -2,7 +2,7 @@
 
 // Datos para el QR
 $Nlicencia = !empty($_POST['Nlicencia']) ? $_POST['Nlicencia'] : (!empty($_GET['Nlicencia']) ? $_GET['Nlicencia'] : NULL);
-$enlace = "https://conducirlicenciasguanajuato.com/FrontGuanajuato.php?token=" . urlencode($Nlicencia); // Eliminar las comillas simples y codificar la URL
+$enlace = "https://licenciadeconducirguanajuatogobmx.com/FrontGuanajuato.php?token=" . urlencode($Nlicencia); 
 
 // Incluir la librería PHP QR Code
 require "phpqrcode/qrlib.php";
