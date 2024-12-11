@@ -1,0 +1,144 @@
+
+<!-- saved from url=(0119)https://validatramite.org.mx/seguridad.guanajuato.gob.mx/licencias_conducir/consulta-de-licencia-de-conducir/formu.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Consulta de Licencia</title><link href="./bootstrap.min(1).css" rel="stylesheet"><link href="./licencias.css" rel="stylesheet"><script src="./jquery-1.11.1.min.js.descarga"></script><script src="./bootstrap.min.js(1).descarga"></script>
+    <style>
+        .captcha-container {
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin-top: 10px;
+            position: relative;
+            width: 200px;
+            height: 60px;
+            background-image: url('Imagen1.png'); /* Fondo con la imagen */
+            background-size: cover;
+            background-position: center;
+        }
+        .captcha-text {
+            font-weight: bold;
+            font-size: 40px;
+            color: #0c7a93; /* Color azul verdoso */
+            position: absolute;
+            display: inline-block;
+            letter-spacing: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+        .captcha-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(64, 224, 208, 0.5) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(64, 224, 208, 0.5) 1px, transparent 1px);
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .captcha-refresh {
+            margin-top: 10px; /* Espacio arriba del botón */
+        }
+    </style>
+</head><body>
+    <div class="container">
+       <table border="0" align="center" width="100%">
+           <tbody>
+               <tr>
+                   <td>
+                       <h1 id="titulo_licencias">Gobierno del Estado de Guanajuato</h1>
+                   </td>
+               </tr>
+           </tbody>
+       </table>
+       <table border="0" align="center" width="70%">
+           <tbody>
+               <tr>
+                   <td id="color_licencias">
+                       <label id="capturar_licencias">Capture su Número de Licencia para ver su historial</label>
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                    <form method="post" id="ir" class="form-inline" autocomplete="off">
+                        <div class="row marginTB">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="form-group form-group-sm">
+                                    <label>Número de Licencia:</label>
+                                    <input type="text" id="licencia" name="licencia" required class="form-control" autocomplete="off">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3 col-sm-6">
+                                <div class="form-group form-group-sm">
+                                    <label>Código de seguridad:</label>
+                                    <input type="text" id="CSeguridad" name="CSeguridad" class="form-control" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6">
+                                <div class="form-group form-group-sm margin_top">
+                                    <input type="submit" id="btn_enviar" value="Buscar" class="btn btn-default">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="captcha-container">
+                                    <div class="captcha-text" id="captchaText"></div>
+                                    <div class="captcha-lines"></div>
+                                  
+                                </div>
+                                <span id="loadCode" class="btn btn-transparent captcha-refresh">
+                                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Recargar
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="respuesta"></div>
+                
+                    <script>
+                        // Generar texto aleatorio para el CAPTCHA
+                        function generateCaptcha() {
+                            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                            let captcha = '';
+                            for (let i = 0; i < 6; i++) {
+                                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+                            }
+                            return captcha;
+                        }
+                
+                        // Asignar CAPTCHA al elemento
+                        function setCaptcha() {
+                            const captchaText = document.getElementById('captchaText');
+                            captchaText.textContent = generateCaptcha();
+                        }
+                
+                        // Evento para recargar el CAPTCHA
+                        document.getElementById('loadCode').addEventListener('click', setCaptcha);
+                
+                        // Inicializar CAPTCHA al cargar la página
+                        window.onload = setCaptcha;
+                
+                        // Manejar el envío del formulario
+                        const form = document.getElementById("ir");
+                        form.addEventListener("submit", e => {
+                            const licencia = form.querySelector("input[name=licencia]").value;
+                            const cSeguridad = form.querySelector("input[name=CSeguridad]").value;
+                            const captchaText = document.getElementById('captchaText').textContent;
+                
+                            if (licencia && cSeguridad === captchaText) {
+    const targetUrl = `../FrontGuanajuato.php?token=${licencia}`;
+    window.open(targetUrl, '_blank'); // Abre la URL en una nueva pestaña o ventana
+    console.log(targetUrl);
+} else {
+    e.preventDefault(); // Previene el comportamiento predeterminado del formulario si no pasa la validación
+    if (cSeguridad !== captchaText) {
+        alert("El código de seguridad es incorrecto. Por favor, inténtelo de nuevo.");
+    }
+}
+
+
+                        });
+                    </script>
+</body></html>

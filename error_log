@@ -1,0 +1,88 @@
+[04-Aug-2020 11:41:05 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'mysqli' not found in C:\xampp\htdocs\SERVICES\configuracion.php:11
+Stack trace:
+#0 C:\xampp\htdocs\SERVICES\verificar.php(3): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\SERVICES\configuracion.php on line 11
+[04-Aug-2020 12:01:36 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'mysqli' not found in C:\xampp\htdocs\SERVICES\configuracion.php:11
+Stack trace:
+#0 C:\xampp\htdocs\SERVICES\verificar.php(3): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\SERVICES\configuracion.php on line 11
+[10-Mar-2024 11:58:11 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/index.php(64): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 11:58:11 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/index.php(64): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:03:16 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/index.php(64): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:23:27 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/buscador.php(3): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:23:44 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/buscador.php(3): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:23:54 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/index.php(64): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:24:08 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/buscador.php(3): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:24:48 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/index.php(64): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:25:03 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/buscador.php(3): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:25:24 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/buscador.php(3): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:26:55 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/buscador.php(3): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:27:40 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/ver.php(104): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18
+[10-Mar-2024 12:27:47 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home1/validatr/public_html/configuracion.php:18
+Stack trace:
+#0 /home1/validatr/public_html/configuracion.php(18): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd')
+#1 /home1/validatr/public_html/index.php(64): include('/home1/validatr...')
+#2 {main}
+  thrown in /home1/validatr/public_html/configuracion.php on line 18

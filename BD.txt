@@ -1,0 +1,22 @@
+
+CREATE TABLE licenciasVehiculos (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Niv VARCHAR(17) NOT NULL,
+    Placa VARCHAR(10),
+    Marca VARCHAR(50),
+    Vehiculo VARCHAR(50),
+    Modelo VARCHAR(50),
+    Clase_y_Tipo VARCHAR(50),
+    Motor VARCHAR(50),
+    Cilindros VARCHAR(12),
+    Combustible VARCHAR(30),
+    Pasajeros VARCHAR(10),
+    Uso VARCHAR(20),
+    Capacidad_de_Carga VARCHAR(50),
+    Numero_de_Tarjeta VARCHAR(50),
+    Folio VARCHAR(20),
+    Observaciones VARCHAR(130),
+    Fecha_Expedicion DATE,
+    Adeudos_Tenencia VARCHAR(50),
+    Estado_Vehiculo VARCHAR(230)
+);
